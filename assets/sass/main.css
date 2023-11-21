@@ -40,8 +40,99 @@
   font-weight: 900;
   font-style: normal;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: black;
   font-weight: 100;
   font-family: "headingFonts", sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.webBtn {
+  padding: 1rem 2rem;
+  background-color: #FAEDC0;
+  border-radius: 6px;
+  color: #252525 !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.webBtn:hover {
+  background: #cdc3a0;
+}
+
+header {
+  background-color: #252525;
+  padding: 0.875rem 0px;
+}
+
+.menu-wrap ul {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  justify-content: end;
+}
+.menu-wrap ul a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.menu-wrap ul a:hover {
+  color: #FAEDC0;
+}
+
+.contactBannerDetails {
+  display: grid;
+  grid-template-columns: 26.44444% 100%;
+}
+.contactBannerDetails li {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 25.6px */
+  color: #fff;
+  list-style: none;
+}
+.contactBannerDetails li span {
+  margin-right: 0.625rem;
+}
+
+.bannerText {
+  padding: 11.438rem 0rem;
+}
+.bannerText h1 {
+  color: #FAEDC0;
+  font-family: "headingFonts", sans-serif;
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 120%;
+  /* 52.8px */
+  letter-spacing: -0.055rem;
+}
+.bannerText p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.frameBanner {
+  background-color: #252525;
 }/*# sourceMappingURL=main.css.map */

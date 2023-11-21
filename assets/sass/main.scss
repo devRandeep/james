@@ -6,20 +6,26 @@
 }
 
 //::::::::::: Variables;
-$dark-color:#252525;
-$brand-color:#FAEDC0;
-$heading-font:'headingFonts', sans-serif;
-$text-font:'DM Sans', sans-serif;
+$secondary-color: #252525;
+$primary-color: #FAEDC0;
+$heading-font: 'headingFonts', sans-serif;
+$text-font: 'DM Sans', sans-serif;
+// :::::::::::: Mixin;
+@mixin commonColorandFonts {
+    color: $primary-color;
+    font-family: $heading-font;
+} 
 // :::::::::::::: Define a mixin for @font-face
 @mixin font-face($font-family, $font-path, $font-weight: normal, $font-style: normal) {
     @font-face {
-      font-family: $font-family;
-      src: url('#{$font-path}.woff2') format('woff2'),
-           url('#{$font-path}.woff') format('woff');
-      font-weight: $font-weight;
-      font-style: $font-style;
+        font-family: $font-family;
+        src: url('#{$font-path}.woff2') format('woff2'),
+        url('#{$font-path}.woff') format('woff');
+        font-weight: $font-weight;
+        font-style: $font-style;
     }
-  }
+}
+
 @include font-face('headingFonts', './fonts/museosans-100-webfont', 100);
 @include font-face('headingFonts', './fonts/museosans-300-webfont', 300);
 @include font-face('headingFonts', './fonts/museosans-500-webfont', 500);
@@ -27,8 +33,104 @@ $text-font:'DM Sans', sans-serif;
 @include font-face('headingFonts', './fonts/museosans-700-webfont', 700);
 @include font-face('headingFonts', './fonts/museosans-900-webfont', 900);
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: black;
-    font-weight: 100;   
+    font-weight: 100;
     font-family: $heading-font;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.webBtn {
+    padding: 1rem 2rem;
+    background-color: $primary-color;
+    border-radius: 6px;
+    color: $secondary-color !important;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background: #cdc3a0;
+    }
+}
+
+// Header CSS;
+header {
+    background-color: $secondary-color;
+    padding: 0.875rem 0px;
+}
+
+.menu-wrap {
+    ul {
+        display: flex;
+        column-gap: 2rem;
+        justify-content: end;
+        a {
+            font-family: $text-font;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.30s ease-in-out;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.contactBannerDetails {
+    display: grid;
+    grid-template-columns: 26.44444% 100%;
+
+    li {
+        font-family: $text-font;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+        color: #fff;
+        list-style: none;
+        span {
+            margin-right: 0.625rem;
+        }
+    }
+
+}
+
+.bannerText {
+    padding: 11.438rem 0rem;
+
+    h1 { 
+        @include commonColorandFonts();     
+        font-size: 2.75rem;        
+        font-weight:600;
+        line-height: 120%;
+        /* 52.8px */
+        letter-spacing: -0.055rem;        
+    }
+
+    p {
+        font-family: $text-font;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+}
+
+.frameBanner {
+    background-color: $secondary-color;
 }
