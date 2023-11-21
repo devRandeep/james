@@ -4,7 +4,7 @@
 <section class="frameBanner">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
             <div class="bannerText">
                 <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur. Dictum lobortis pellentesque a enim est est nisi. Vitae.</p>

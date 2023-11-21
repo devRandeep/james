@@ -95,7 +95,7 @@ header {
 
 .contactBannerDetails {
   display: grid;
-  grid-template-columns: 26.44444% 100%;
+  grid-template-columns: 30.44444% 100%;
 }
 .contactBannerDetails li {
   font-family: "DM Sans", sans-serif;
@@ -113,6 +113,8 @@ header {
 
 .bannerText {
   padding: 11.438rem 0rem;
+  position: relative;
+  z-index: 22;
 }
 .bannerText h1 {
   color: #FAEDC0;
@@ -135,4 +137,15 @@ header {
 
 .frameBanner {
   background-color: #252525;
+  position: relative;
+}
+.frameBanner:after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: #525050;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
 }/*# sourceMappingURL=main.css.map */
