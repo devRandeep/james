@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ::::::::::::::: FAVICON :::::::::::::::::::: -->
-    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.svg">    
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.svg">    
     <title>JAMES MOSSMAN</title>
     <!-- ::::::::::::::: CSS :::::::::::::::::::: -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,7 +28,7 @@
                 <!-- ///////////// LOGO -->
                 <div class="col-md-3">
                     <div class="header-logo">
-                        <img src="assets/images/logo/logo.svg" alt="">
+                        <img src="assets/logo/logo.svg" alt="">
                     </div>
                 </div>
                 <!-- /////////////// MENU -->
@@ -49,5 +49,4 @@
         </div>
     </header>
 </body>
-
 </html>
