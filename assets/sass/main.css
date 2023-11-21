@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "headingFonts";
+  src: url("./fonts/museosans-100-webfont.woff2") format("woff2"), url("./fonts/museosans-100-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "headingFonts";
+  src: url("./fonts/museosans-300-webfont.woff2") format("woff2"), url("./fonts/museosans-300-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "headingFonts";
+  src: url("./fonts/museosans-500-webfont.woff2") format("woff2"), url("./fonts/museosans-500-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "headingFonts";
+  src: url("./fonts/museosans-100-webfont.woff2") format("woff2"), url("./fonts/museosans-100-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "headingFonts";
+  src: url("./fonts/museosans-700-webfont.woff2") format("woff2"), url("./fonts/museosans-700-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "headingFonts";
+  src: url("./fonts/museosans-900-webfont.woff2") format("woff2"), url("./fonts/museosans-900-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  font-weight: 100;
+  font-family: "headingFonts", sans-serif;
+}/*# sourceMappingURL=main.css.map */

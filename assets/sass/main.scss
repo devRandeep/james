@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+//::::::::::: Variables;
+$dark-color:#252525;
+$brand-color:#FAEDC0;
+$heading-font:'headingFonts', sans-serif;
+$text-font:'DM Sans', sans-serif;
+// :::::::::::::: Define a mixin for @font-face
+@mixin font-face($font-family, $font-path, $font-weight: normal, $font-style: normal) {
+    @font-face {
+      font-family: $font-family;
+      src: url('#{$font-path}.woff2') format('woff2'),
+           url('#{$font-path}.woff') format('woff');
+      font-weight: $font-weight;
+      font-style: $font-style;
+    }
+  }
+@include font-face('headingFonts', './fonts/museosans-100-webfont', 100);
+@include font-face('headingFonts', './fonts/museosans-300-webfont', 300);
+@include font-face('headingFonts', './fonts/museosans-500-webfont', 500);
+@include font-face('headingFonts', './fonts/museosans-100-webfont', 100);
+@include font-face('headingFonts', './fonts/museosans-700-webfont', 700);
+@include font-face('headingFonts', './fonts/museosans-900-webfont', 900);
+
+h1, h2, h3, h4, h5, h6{
+    color: black;
+    font-weight: 100;   
+    font-family: $heading-font;
+}
