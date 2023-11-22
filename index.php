@@ -7,7 +7,8 @@
             <div class="col-md-5">
                 <div class="bannerText">
                     <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur. Dictum lobortis pellentesque a enim est est nisi. Vitae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Dictum lobortis pellentesque a enim est est nisi. Vitae.
+                    </p>
                     <div class="contactBannerDetails align-items-center">
                         <div class="work-btn">
                             <a href="" class="webBtn">Our Work</a>
@@ -77,24 +78,24 @@
                     <p class="itemId">JML01</p>
                 </div>
             </div>
-             <!--  -->
-             <div class="itemBox">
+            <!--  -->
+            <div class="itemBox">
                 <div class="itemImage" style="background-image: url(assets/images/wallitem2.svg);"></div>
                 <div class="itemText">
                     <p class="itemTitle">Red Wirecut</p>
                     <p class="itemId">JML01</p>
                 </div>
             </div>
-             <!--  -->
-             <div class="itemBox">
+            <!--  -->
+            <div class="itemBox">
                 <div class="itemImage" style="background-image: url(assets/images/wallitem3.svg);"></div>
                 <div class="itemText">
                     <p class="itemTitle">Red Wirecut</p>
                     <p class="itemId">JML01</p>
                 </div>
             </div>
-             <!--  -->
-             <div class="itemBox">
+            <!--  -->
+            <div class="itemBox">
                 <div class="itemImage" style="background-image: url(assets/images/wallitem4.svg);"></div>
                 <div class="itemText">
                     <p class="itemTitle">Red Wirecut</p>
@@ -111,51 +112,52 @@
 
 <!-- ///////////////// OUR WORK -->
 <section class="ourWork">
-<div class="container">
-    <div class="row">
-        <!-- BUTTON AND TITLE ROW  -->
-        <div class="row sectionTitleAndButton">
-            <div class="col-md-6">
-                <h3>Our Work</h3>
+    <div class="container">
+        <div class="row">
+            <!-- BUTTON AND TITLE ROW  -->
+            <div class="row sectionTitleAndButton">
+                <div class="col-md-6">
+                    <h3>Our Work</h3>
+                </div>
+                <div class="col-md-6 float-end">
+                    <a href="" class="webBtn">View all</a>
+                </div>
             </div>
-            <div class="col-md-6 float-end">
-                <a href="" class="webBtn">View all</a>
+            <!-- BUTTON AND TITLE ROW CLOSE -->
+        </div>
+        <div class="row ourWorkRowItem">
+            <!--  -->
+            <div class="mainWorkItemBox">
+                <div class="workTextBox"
+                    style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.77) 100%), url(assets/images/work1.svg), lightgray 50% / cover no-repeat;">
+                    <div class="workItemTextBox">
+                        <span class="workcat">Apartments</span>
+                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="mainWorkItemBox">
+                <div class="workTextBox"
+                    style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.77) 100%), url(assets/images/work2.svg), lightgray 50% / cover no-repeat;">
+                    <div class="workItemTextBox">
+                        <span class="workcat">Apartments</span>
+                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="mainWorkItemBox">
+                <div class="workTextBox"
+                    style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.77) 100%), url(assets/images/work3.svg), lightgray 50% / cover no-repeat;">
+                    <div class="workItemTextBox">
+                        <span class="workcat">Apartments</span>
+                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- BUTTON AND TITLE ROW CLOSE -->
     </div>
-<div class="row ourWorkRowItem">
-    <!--  -->
-    <div class="mainWorkItemBox">
-        <div class="workTextBox" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.77) 100%), url(assets/images/work1.svg), lightgray 50% / cover no-repeat;">
-            <div class="workItemTextBox">
-            <span class="workcat">Apartments</span>
-            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-            </div>
-        </div>
-    </div>
-     <!--  -->
-     <div class="mainWorkItemBox">
-        <div class="workTextBox" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.77) 100%), url(assets/images/work2.svg), lightgray 50% / cover no-repeat;">
-            <div class="workItemTextBox">
-            <span class="workcat">Apartments</span>
-            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-            </div>
-        </div>
-    </div>
-      <!--  -->
-      <div class="mainWorkItemBox">
-        <div class="workTextBox" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.77) 100%), url(assets/images/work3.svg), lightgray 50% / cover no-repeat;">
-            <div class="workItemTextBox">
-            <span class="workcat">Apartments</span>
-            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-</div>
 </section>
 <!-- ///////////////// OUR WORK CLOSE -->
 

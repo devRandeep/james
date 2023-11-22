@@ -301,6 +301,14 @@ header {
   background-size: cover !important;
   display: flex;
   align-items: end;
+  transition: all 0.3s ease-in-out;
+}
+.mainWorkItemBox .workTextBox:hover {
+  background: url(../images/work1-backimg.svg) !important;
+  transition: all 0.3s ease-in-out;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 .mainWorkItemBox .workTextBox span {
   font-family: "DM Sans", sans-serif;
