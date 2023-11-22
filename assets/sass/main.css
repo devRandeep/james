@@ -40,6 +40,10 @@
   font-weight: 900;
   font-style: normal;
 }
+body {
+  background-color: #252525 !important;
+}
+
 h1,
 h2,
 h3,
@@ -49,6 +53,22 @@ h6 {
   color: black;
   font-weight: 100;
   font-family: "headingFonts", sans-serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 ul {
@@ -65,6 +85,9 @@ ul {
   font-weight: 700;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .webBtn:hover {
   background: #cdc3a0;
@@ -80,6 +103,7 @@ header {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   justify-content: end;
+  align-items: center;
 }
 .menu-wrap ul a {
   font-family: "DM Sans", sans-serif;
@@ -119,7 +143,6 @@ header {
 .bannerText h1 {
   color: #FAEDC0;
   font-family: "headingFonts", sans-serif;
-  font-size: 2.75rem;
   font-weight: 600;
   line-height: 120%;
   /* 52.8px */
@@ -143,11 +166,13 @@ header {
   content: "";
   width: 50%;
   height: 100%;
-  background: #525050;
+  background: #2E2D2D;
   left: 0;
   bottom: 0;
   position: absolute;
   z-index: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0 100%);
 }
 
 .bannerVideo {
@@ -159,4 +184,137 @@ header {
   right: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.howWeAre {
+  padding: 80px 0px;
+}
+
+.howWeAre-image {
+  width: 100%;
+  height: 487px;
+  background-size: cover;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+}
+
+.howweare-inbox h2 {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 50.4px */
+  letter-spacing: -0.72px;
+  color: #FAEDC0;
+  font-family: "headingFonts", sans-serif;
+  margin-bottom: 1.25rem;
+}
+.howweare-inbox p {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 28.8px */
+  color: #fff;
+  margin-bottom: 1.25rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.brickLibrary {
+  padding: 5rem 0px;
+  background-color: #2E2D2D;
+}
+.brickLibrary .itemRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Responsive columns */
+  -moz-column-gap: 54px;
+       column-gap: 54px;
+}
+.brickLibrary .itemRow .itemImage {
+  height: 17rem;
+  border-radius: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.brickLibrary .itemRow .itemTitle {
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 8px;
+  color: #FAEDC0;
+}
+.brickLibrary .itemRow .itemId {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.36px;
+  color: #fff;
+}
+
+.sectionTitleAndButton {
+  padding-bottom: 2.5rem;
+}
+.sectionTitleAndButton h3 {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  color: #FAEDC0;
+  font-family: "headingFonts", sans-serif;
+}
+.sectionTitleAndButton a {
+  float: right;
+}
+
+.ourWork {
+  padding: 5rem 0px;
+}
+
+.ourWorkRowItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 54px;
+       column-gap: 54px;
+}
+
+.mainWorkItemBox {
+  position: relative;
+}
+.mainWorkItemBox .workTextBox {
+  position: relative;
+  height: 23.375rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  padding: 20px 28px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  display: flex;
+  align-items: end;
+}
+.mainWorkItemBox .workTextBox span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #FAEDC0;
+  margin-bottom: 10px;
+}
+.mainWorkItemBox .workTextBox h4 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.48px;
 }/*# sourceMappingURL=main.css.map */

@@ -5,35 +5,13 @@
     box-sizing: border-box;
 }
 
-//::::::::::: Variables;
-$secondary-color: #252525;
-$primary-color: #FAEDC0;
-$heading-font: 'headingFonts', sans-serif;
-$text-font: 'DM Sans', sans-serif;
+@import "_mixin";
+@import "_variables";
 
-// :::::::::::: Mixin;
-@mixin commonColorandFonts {
-    color: $primary-color;
-    font-family: $heading-font;
+body {
+    background-color: $secondary-color !important;
 }
 
-// :::::::::::::: Define a mixin for @font-face
-@mixin font-face($font-family, $font-path, $font-weight: normal, $font-style: normal) {
-    @font-face {
-        font-family: $font-family;
-        src: url('#{$font-path}.woff2') format('woff2'),
-        url('#{$font-path}.woff') format('woff');
-        font-weight: $font-weight;
-        font-style: $font-style;
-    }
-}
-
-@include font-face('headingFonts', './fonts/museosans-100-webfont', 100);
-@include font-face('headingFonts', './fonts/museosans-300-webfont', 300);
-@include font-face('headingFonts', './fonts/museosans-500-webfont', 500);
-@include font-face('headingFonts', './fonts/museosans-100-webfont', 100);
-@include font-face('headingFonts', './fonts/museosans-700-webfont', 700);
-@include font-face('headingFonts', './fonts/museosans-900-webfont', 900);
 
 h1,
 h2,
@@ -44,6 +22,22 @@ h6 {
     color: black;
     font-weight: 100;
     font-family: $heading-font;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.875rem;
+}
+
+h4 {
+    font-size: 1.5rem;
 }
 
 ul {
@@ -60,6 +54,8 @@ ul {
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    display: block;
+    width: fit-content;
 
     &:hover {
         background: #cdc3a0;
@@ -77,6 +73,7 @@ header {
         display: flex;
         column-gap: 2rem;
         justify-content: end;
+        align-items: center;
 
         a {
             font-family: $text-font;
@@ -121,7 +118,6 @@ header {
 
     h1 {
         @include commonColorandFonts();
-        font-size: 2.75rem;
         font-weight: 600;
         line-height: 120%;
         /* 52.8px */
@@ -147,15 +143,17 @@ header {
         content: '';
         width: 50%;
         height: 100%;
-        background: #525050;
+        background: $light-gray;
         left: 0;
         bottom: 0;
         position: absolute;
         z-index: 0;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+        clip-path: polygon(0 0, 100% 0%, 80% 100%, 0 100%);
     }
 }
 
-.bannerVideo{
+.bannerVideo {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -163,4 +161,149 @@ header {
     left: 0;
     right: 0;
     object-fit: cover;
+}
+
+.howWeAre {
+    padding: 80px 0px;
+}
+
+.howWeAre-image {
+    width: 100%;
+    height: 487px;
+    background-size: cover;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+}
+
+.howweare-inbox {
+    h2 {
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        /* 50.4px */
+        letter-spacing: -0.72px;
+        color: $primary-color;
+        font-family: $heading-font;
+        margin-bottom: 1.25rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 28.8px */
+        color: #fff;
+        margin-bottom: 1.25rem;
+        font-family: $text-font;
+
+    }
+}
+
+.brickLibrary {
+    padding: 5rem 0px;
+    background-color: $light-gray;
+
+    .itemRow {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Responsive columns */
+        column-gap: 54px;
+
+        .itemImage {
+            height: 17rem;
+            border-radius: 6px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+
+        .itemTitle {
+            font-size: 1rem;
+            font-family: $text-font;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            margin-bottom: 8px;
+            color: $primary-color;
+        }
+
+        .itemId {
+            font-family: $text-font;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.36px;
+            color: #fff;
+        }
+
+    }
+
+}
+
+.sectionTitleAndButton {
+    padding-bottom: 2.5rem;
+
+    h3 {
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.6px;
+        @include commonColorandFonts();
+    }
+
+    a {
+        float: right;
+    }
+}
+
+.ourWork {
+    padding: 5rem 0px;
+}
+
+.ourWorkRowItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 54px;
+}
+
+.mainWorkItemBox {
+    position: relative;
+
+    .workTextBox {
+        position: relative;
+        height: 23.375rem;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 6px;
+        padding: 20px 28px;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        display: flex;
+        align-items: end;
+
+        span {
+            font-family: $text-font;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            color: $primary-color;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #fff;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.48px;
+        }
+    }
 }
